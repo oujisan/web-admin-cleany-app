@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Admin Cleany App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <h2 class="sidebar-header">Cleany App</h2>
+        <ul class="sidebar-nav">
+            <li><a href="index.html" class="active">Dashboard</a></li>
+            <li><a href="areas.html">Kelola Area</a></li>
+            <li><a href="shifts.html">Kelola Shift</a></li>
+            <li><a href="users.html">Kelola User</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <button id="logout-button">Logout</button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <h1>Dashboard</h1>
+        </header>
+
+        <section class="stats-container" id="user-stats">
+        </section>
+
+        <section class="stats-container" style="margin-top: 30px;" id="task-stats">
+        </section>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
